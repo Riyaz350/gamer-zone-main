@@ -10,6 +10,36 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.primary-title{
+    color: #0B0223;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.primary-para{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+.btn-primary{
+    padding: 21px 40px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: 0px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.narrow-sections{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
 /* nav styles */
 
 nav{
@@ -63,29 +93,223 @@ nav{
 
 
 
+/* banner section */
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('images/Group\ 14.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+.banner-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.banner-main-title{
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+}
+
+.banner-para{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+.banner-button{
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.banner-button button:nth-child(2){
+    background: #4EC5F7;
+}
+
+
+/* online games section */
+
+.online-games{
+    text-align: center;
+    margin-top: 120px;
+}
+.online-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 48px;
+}
+.card{
+    width: 342px;
+    text-align: left;
+}
+
+.funny{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* PRO section styles */
+
+
+.pro-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+    margin-top: 120px;
+}
+.pro-text{
+    text-align: right;
+    width: 800px;
+    padding-bottom: 300px;
+}
+.pro-text span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 
+.absolute{
+    position: relative;
+    bottom: 280px;
+    right: 150px;
+
+}
+
+/* genre styles */
 
 
+.genre-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    justify-content: center;
+}
+.genre-list-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-radius: 50px;
+    background: #FFF;
+    transition: 0.5s;
+}
 
-
-
-
+.genre-list-item{
+    padding: 10px;
+    border:2px solid;
+}
+.genre{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    transition: 0.5s;
+    padding: 100px;
+}
+.genre-list-item:hover{
+    border: 2px solid pink;
+    padding: 10px;
+    border-radius: 50px;
+    color: rgb(172, 52, 72);
+}
 
 
 
 @media screen and (max-width:576px) {
+    
+    .narrow-sections{
+        max-width: none;
+    }
     nav,
     .nav-menu
     {
         flex-direction: column;
         align-items: center;
     }
+    nav{
+        padding: 20px 210px;
+    }
+    
     .nav-menu{
         margin-top: 60px;
     }
+    
+    .banner{
+        flex-direction: column-reverse;
+        background-image: none;
+        margin: 0px auto;
+    }
+    .banner-text{
+        margin-top: 150px;
+        background: url('images/Group\ 14.png');
+        background-size: contain;
+        margin: 0px;
+    }
+    .banner img{
+        width: 100%;
+        margin-bottom: 24px;
+    }
 
+    .online-games{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .online-cards{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .pro-text{
+        width: auto;
+    }
+    .pro-section{
+        flex-direction: column;
+    }
+    .pro-image{
+        padding: 0px 0px 0px 50px;
+    }
+    .pro-image img{
+        width: 90%;
+    }
+    .anniversary-img img{
+        margin: 0px;
+    }
+    .pro-section{
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .pro-text{
+        padding: 0px;
+        text-align: center;
+    }
+    .absolute{
+        position: relative;
+        left: -40px;
+        top: -150px;
+    }
+    .absolute img{
+        width: 50%;
+    }
 }
 
 
@@ -98,5 +322,56 @@ nav{
         margin-top: 30px;
         gap: 20px;
         width: 600px;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        background-image: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-text{
+        background: url('images/Group\ 14.png');
+        background-size: contain;
+        padding: 200px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        
+    }
+
+    .online-games{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .online-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        
+    }
+    .pro-text{
+        width: auto;
+        text-align: center;
+        padding: 0px;
+    }
+    .pro-section{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .pro-image{
+        padding-left: 250px;
+    }
+    .pro-image img{
+        width: 70%;
+    }
+    .absolute{
+        top: -150px;
+        left: -100px;
+    }
+    .absolute img{
+        width: 40%;
     }
 }
