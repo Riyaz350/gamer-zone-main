@@ -59,7 +59,7 @@ nav{
     font-weight: 700;
     align-items: center;
 }
-.nav-logo, footer-logo img{
+.nav-logo img{
     width: 86.041px;
     height: 40px;
     
@@ -211,13 +211,12 @@ nav{
     gap: 18px;
     border-radius: 50px;
     background: #FFF;
-    transition: 0.5s;
+    transition: 0.001s;
+    padding: 10px;
+    border:2px solid rgba(255, 255, 255, 0);
 }
 
-.genre-list-item{
-    padding: 10px;
-    border:2px solid;
-}
+
 .genre{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     transition: 0.5s;
@@ -320,6 +319,9 @@ nav{
     nav{
         padding: 20px 210px;
     }
+    .nav-logo{
+        justify-content: center;
+    }
     
     .nav-menu{
         margin-top: 60px;
@@ -392,16 +394,40 @@ nav{
     }
     .genre-list-item{
         gap: 5px;
+        width: 90%;
+        border-radius: 20px;
     }
     .genre-list-item img{
-        width: 25%;
+        width: 35%;
     }
     .genre-list-item-name{
         font-size: 0.6rem;
     }
-
+    
+    .footer{
+        padding: 20px;
+    }
+    .footer-list ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+    .social-icons ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 0px 100px;
+    }
+    .policy ul{
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30px;
+    }
+    
 }
 
+/* responsive styles */
 
 @media screen and (min-width:576px) and (max-width:992px){
     nav{
@@ -463,5 +489,9 @@ nav{
     }
     .absolute img{
         width: 40%;
+    }
+
+    .footer{
+        padding:50px 30px 280px 30px;
     }
 }
