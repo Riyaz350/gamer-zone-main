@@ -8,6 +8,8 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Work Sans', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 .primary-title{
@@ -50,14 +52,14 @@ nav{
     padding: 37px 240px;
 }
 
-.nav-logo{
+.nav-logo, .footer-logo{
     display: flex;
     color: #0B0223;
     font-size: 2.8rem;
     font-weight: 700;
     align-items: center;
 }
-.nav-logo img{
+.nav-logo, footer-logo img{
     width: 86.041px;
     height: 40px;
     
@@ -225,8 +227,82 @@ nav{
     border: 2px solid pink;
     padding: 10px;
     border-radius: 50px;
-    color: rgb(172, 52, 72);
+    color: rgb(243, 70, 157);
 }
+.genre-list-item-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+/* footer styles */
+
+.footer{
+    text-align: center;
+    background: #0B0223;
+    padding: 120px 500px;
+}
+
+.footer-title span{
+    color: rgb(221, 23, 162);
+}
+
+.footer-title{
+    color: white;
+}
+.footer-logo{
+    text-align: center;
+    justify-content: center;
+}
+.footer-list ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 66px;
+    
+}
+
+.footer-list ul li a{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+.social-icons ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 66px;
+}
+.social-icons ul li{
+    width: 40px;
+}
+
+.policy ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 74px;
+    margin-bottom: 15px;
+
+}
+.policy a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.policy p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
 
 
 
@@ -310,6 +386,20 @@ nav{
     .absolute img{
         width: 50%;
     }
+    .genre-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .genre-list-item{
+        gap: 5px;
+    }
+    .genre-list-item img{
+        width: 25%;
+    }
+    .genre-list-item-name{
+        font-size: 0.6rem;
+    }
+
 }
 
 
