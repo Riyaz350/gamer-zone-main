@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.online-games{
+    text-align: center;
+    margin-top: 120px;
+    position: static;
+
+}
+.online-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 48px;
+}
+.card{
+    width: 342px;
+    text-align: left;
+}
+
+.funny{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hover-effect{
+    position: absolute;
+transition: 1s;
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: white;
+    border-radius: 15px;
+    height: 400px;
+}
+/* .play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */
+.hover-effect:hover .overlay{
+    opacity: 0.6;
+}
+.online-cards p{
+    position: relative;
+    bottom: -400px;
+    text-align: center;
+}
+
+
+
+
+
+/* genre styles */
+
+
+.genre-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    justify-content: center;
+}
+.genre-list-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-radius: 50px;
+    background: #FFF;
+    transition: 0.001s;
+    padding: 10px;
+    border:2px solid rgba(255, 255, 255, 0);
+}
+
+
+.genre{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    transition: 0.5s;
+    padding: 100px;
+    
+}
+.genre-list-item:hover{
+    border: 2px solid pink;
+    padding: 10px;
+    border-radius: 50px;
+    color: rgb(243, 70, 157);
+}
+.genre-list-item-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .online-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 400px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <section class="online-games">
+        <h3 class="primary-title">Online Games <span class="funny">Funny Videos</span></h3>
+        <p class="primary-para">A Collection of Hilarious Videos to Brighten Your Day</p>
+        <div class="online-cards">
+            <div class="card">
+                <div class="hover-effect">
+                <img  src="images/Rectangle 4.png" alt="" class="card-image">
+                <div class="overlay"><i class="fa-light fa-circle-play"></i></div>
+            </div>
+               <p class="primary-para">No Download. No Installs. Play games Instantly on Gamer.</p>
+            </div>
+            <div class="card">
+                <div class="hover-effect">
+                <img  src="images/Rectangle 4.png" alt="" class="card-image">
+                <div class="overlay"><div class="play-icon"><i class="fa-light fa-circle-play"></i></div></div>
+            </div>
+               <p class="primary-para">No Download. No Installs. Play games Instantly on Gamer.</p>
+            </div>
+            <div class="card">
+                <div class="hover-effect">
+                <img  src="images/Rectangle 4.png" alt="" class="card-image">
+                <div class="overlay"><div class="play-icon"><i class="fa-light fa-circle-play"></i></div></div>
+            </div>
+               <p class="primary-para">No Download. No Installs. Play games Instantly on Gamer.</p>
+            </div>
+            <div class="card">
+                <div class="hover-effect">
+                <img  src="images/Rectangle 4.png" alt="" class="card-image">
+                <div class="overlay"><div class="play-icon"><i class="fa-light fa-circle-play"></i></div></div>
+            </div>
+               <p class="primary-para">No Download. No Installs. Play games Instantly on Gamer.</p>
+            </div>
+            
+          
+        </div>
+
+
+
+    </section>
+
+</div>
+
+
+
+
+
+    <section class="genre">
+        <div class="genre-list">
+        <div class="genre-list-item">
+            <img src="images/Rectangle 11.png" alt="">
+            <p class="genre-list-item-name">Action Games</p>
+        </div>
+        <div class="genre-list-item">
+            <img src="images/Rectangle 12.png" alt="">
+            <p class="genre-list-item-name">Adventure Games</p>
+        </div>
+        <div class="genre-list-item">
+            <img src="images/Rectangle 13.png" alt="">
+            <p class="genre-list-item-name">Arcade Games</p>
+        </div>
+        <div class="genre-list-item">
+            <img src="images/Rectangle 14.png" alt="">
+            <p class="genre-list-item-name">Educational Games</p>
+        </div>
+        <div class="genre-list-item">
+            <img src="images/Rectangle 15.png" alt="">
+            <p class="genre-list-item-name">Word Games</p>
+        </div>
+        <div class="genre-list-item">
+            <img src="images/Rectangle 16.png" alt="">
+            <p class="genre-list-item-name">Role Palying Games</p>
+        </div>
+        <div class="genre-list-item">
+            <img src="images/Rectangle 17.png" alt="">
+            <p class="genre-list-item-name">Music & Audio Games</p>
+        </div>
+        <div class="genre-list-item">
+            <img src="images/Rectangle 18.png" alt="">
+            <p class="genre-list-item-name">Puzzle Games</p>
+        </div>
+        <div class="genre-list-item">
+            <img src="images/Rectangle 19.png" alt="">
+            <p class="genre-list-item-name">Strategy Games</p>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
